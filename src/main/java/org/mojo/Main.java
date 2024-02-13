@@ -1,35 +1,24 @@
 package org.mojo;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.mojo.linkedlist.AppendExcercise;
+import org.mojo.linkedlist.LinkListExcercise;
+import org.mojo.linkedlist.LinkedList;
 
 public class Main {
 
-    private HashMap<String, String> capitalCities;
-
-    public void setCapitalCities(HashMap<String, String> capitalCities) {
-        this.capitalCities = capitalCities;
-    }
-
-    public HashMap<String, String> getCapitalCities() {
-        return capitalCities;
-    }
-
     public static void main(String[] args) {
-        Main mainApp = new Main();
-        HashMap<String,String> capital = new HashMap<>();
-        HashMap<String,String> capital2;
 
-        capital.put("London","egbo efon");
+        AppendExcercise myLinkedList = new AppendExcercise(1);
+        myLinkedList.makeEmpty();
+        myLinkedList.append(1);
+        myLinkedList.append(2);
 
-        capital2 = capital;
-        mainApp.setCapitalCities(capital);
-        System.out.println(capital);
-        System.out.println(capital2);
+        myLinkedList.getHead();
+        myLinkedList.getTail();
+        myLinkedList.getLength();
 
-        capital.put("Uk","Eleko");
-        System.out.println(capital);
-        System.out.println(mainApp.getCapitalCities());
+        System.out.println("\nLinked List:");
+        myLinkedList.printList();
     }
 
 }

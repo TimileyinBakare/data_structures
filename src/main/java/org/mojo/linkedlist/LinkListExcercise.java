@@ -21,26 +21,4 @@ public class LinkListExcercise {
         return tail.value;
     }
 
-    public int getLength() {
-        return length;
-    }
 
-    public void printList(){
-        Node temp = head;
-        while(temp != null){
-            System.out.println(temp.value);
-            temp = temp.next;
-        }
-    }
-
-    class Node{
-        int value;
-        Node next;
-
-        public Node(int value) {
-            this.value = value;
-        }
-    }
-
-
-}
